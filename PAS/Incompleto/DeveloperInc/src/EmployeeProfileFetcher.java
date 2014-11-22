@@ -2,9 +2,10 @@ import java.util.ArrayList;
 
 class EmployeeProfileFetcher {
    
-    EmployeeProfile fetchEmployee(ArrayList<EmployeeProfile> bd, EmployeeID id) {
+    EmployeeProfile fetchEmployee(EmployeeID id) {
     	EmployeeServer srv = new EmployeeServer();
-        EmployeeProfile profile = srv.fetchEmployee(bd, id);
+        EmployeeProfile profile = srv.fetchEmployee(id);
         return profile;
     }
+	
 }
