@@ -1,12 +1,18 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
 public class Client {
 	
-	public static void main(String[] args){
+	Client(){
+		
+	}
+	
+	public static void main(String[] args) throws IOException {
 		
 		Scanner ent = new Scanner(System.in);
+		//EmployeeProfileManager manager = new EmployeeProfileManager();
 		EmployeeProfileFetcher fetcher = new EmployeeProfileFetcher();
 		EmployeeFactory factory = new EmployeeFactory();
 		
