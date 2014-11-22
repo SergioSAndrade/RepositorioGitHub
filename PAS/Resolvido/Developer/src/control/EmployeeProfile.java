@@ -1,4 +1,7 @@
-public class EmployeeProfile {
+package control;
+import java.util.Date;
+
+public class EmployeeProfile implements Colaborador {
 
 	private EmployeeID id;      
 	private String name;
@@ -18,7 +21,7 @@ public class EmployeeProfile {
 
 	@Override
 	public String toString() {
-		return id + "-" + name;
+		return "Employee: " + id + "-" + name;
 	}
 	
 }

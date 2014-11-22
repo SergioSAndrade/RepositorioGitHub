@@ -1,3 +1,4 @@
+package control;
 public class EmployeeID {
 	
 	 private String id;
